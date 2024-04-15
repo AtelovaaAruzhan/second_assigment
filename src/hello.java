@@ -13,9 +13,9 @@ public main (){
         }
 
         public static void main(String[] args) {
-            String str = "hello, world!";
-            System.out.println("Строка в нижнем регистре: " + str);
-            System.out.println("Строка в верхнем регистре: " + toUpperCaseRecursive(str));
+            String str = "hello";
+            System.out.println("Lowercase" + str);
+            System.out.println("Uppercase" + toUpperCaseRecursive(str));
         }
     }
 
