@@ -145,15 +145,22 @@ public class MyApplication {
 //        System.out.println(queue.peek());
     }
 
-    static void printArr(MyArrayList arr, String m){
-        System.out.println(m);
-        for(Object i : arr) System.out.print(i + " ");
-        System.out.println();
-    }
+    public class ArrayPrinter {
 
-    static void printLinked(Object[] arr, String m){
-        System.out.println(m);
-        for(Object i : arr) System.out.print(i + " ");
-        System.out.println();
-    }
+        public static void printArray(MyArrayList arr, String message) {
+            System.out.println(message);
+            for (Object item : arr) {
+                System.out.print(item + " ");
+            }
+            System.out.println();
+        }
+
+        public static void printArray(Object[] arr, String message) {
+            System.out.println(message);
+            for (Object item : arr) {
+                System.out.print(item + " ");
+            }
+            System.out.println();
+        }
+
 }
